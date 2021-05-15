@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kantor walut</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+  <script defer src="js/script.js"></script>
+</head>
+
+<body class="body">
+  <form class="form js-form">
+    <h1 class="form__header"> Przelicznik walut </h1>
+    <p>
+      <label>
+        <span class="form__labelText"> Kwota w zł*:
+        </span>
+        <input placeholder="Wpisz kwotę w zł" type="number" class="form__field js-amount" name="amount" required step="0.01" min="0.01">
+      </label>
+    </p>
+    <p>
+      <label>
+        <span class="form__labelText">
+          Wybierz walutę:
+        </span>
+        <select class="form__field js-currency" name="currency">
+          <option value="EUR">Euro</option>
+          <option value="USD">Dolar amerykański</option>
+        </select>
+        <p class="form__result js-result"> </p>
+
+      </label>
+    </p>
+    <p>
+      <button class="form__button">Przelicz</button>
+    </p>
+    <p> <button type="reset" class="form__button"> Wyczyść </button>
+    </p>
+  </form>
+
+</body>
+
+</html>
